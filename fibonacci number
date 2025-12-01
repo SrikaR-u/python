@@ -1,0 +1,21 @@
+def fibonacci(n):
+    res = [0, 1]
+    
+    if n <= 0:
+        print("Invalid input")
+        return
+    elif n == 1:
+        print([0])
+        return
+    elif n == 2:
+        print(res)
+        return
+
+    for i in range(2, n):
+        res.append(res[-1] + res[-2])
+
+    print(res)
+
+
+n = int(input())
+fibonacci(n)
