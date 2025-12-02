@@ -1,0 +1,17 @@
+n = input("Enter number: ")
+
+ascending = True
+descending = True
+
+for i in range(len(n)-1):
+    if int(n[i]) > int(n[i+1]):
+        ascending = False
+    if int(n[i]) < int(n[i+1]):
+        descending = False
+
+if ascending:
+    print("ascending")
+elif descending:
+    print("descending")
+else:
+    print("not sorted")
